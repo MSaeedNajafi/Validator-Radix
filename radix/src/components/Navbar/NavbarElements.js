@@ -11,9 +11,10 @@ export const Nav = styled.nav`
   justify-content: center;
   align-item: center;
   font-size: 1rem;
-  position: stikcy;
   // padding: 0.5rem calc((100vw - 1000px) / 2);
-  top: 0;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0; /* required */
   z-index: 10;
 
   @media screen and(max-width: 960px) {

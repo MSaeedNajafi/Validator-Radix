@@ -81,7 +81,7 @@ export const SideBarRoute = styled(LinkR)`
   outline: none;
   border: none;
   cursor: pointer;
-  transition: 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   text-decoration: none;
 
   &:hover {
