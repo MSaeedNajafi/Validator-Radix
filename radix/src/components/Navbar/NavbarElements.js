@@ -53,7 +53,7 @@ export const MobileIcon = styled.div`
     top: 0;
     right: 0;
     transform: translate(-100%, 60%);
-    font-size: 1.8 rem;
+    font-size: 1.8rem;
     cursor: pointer;
     color: #fff;
   }
@@ -67,10 +67,22 @@ export const Bars = styled(FaBars)`
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 75%);
+    transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
     color: #fff;
+  }
+`;
+
+export const NavMenu = styled.ul`
+  display: flex;
+  align-items: center;
+  // margin-right: -24px;
+  list-style: none;
+  tetx-align: center;
+
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 `;
 
@@ -87,24 +99,11 @@ export const NavLink = styled(LinkS)`
   cursor: pointer;
   height: 100%;
   &.active {
-    // color: #15cdfc;
     border-bottom: 3px solid #01bf71;
   }
 `;
 
-export const NavMenu = styled.div`
-  display: flex;
-  align-items: center;
-  // margin-right: -24px;
-  list-style: none;
-  tetx-align: center;
-
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-`;
-
-export const NavBtn = styled.div`
+export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
   // margin-right: 24px;
