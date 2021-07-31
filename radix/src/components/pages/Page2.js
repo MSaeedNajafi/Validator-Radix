@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../Navbar";
 import Sidebar from "../SideBar";
+import PageContentainer from "../contents/index";
 
 const Page2 = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +12,8 @@ const Page2 = () => {
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
-      <div
+      <PageContentainer />
+      {/* <div
         style={{
           display: "flex",
           justifyContent: "center",
@@ -20,7 +22,7 @@ const Page2 = () => {
         }}
       >
         <h1>Page 2</h1>
-      </div>
+      </div> */}
     </>
   );
 };

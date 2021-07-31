@@ -11,11 +11,11 @@ export const Nav = styled.nav`
   justify-content: center;
   align-item: center;
   font-size: 1rem;
-  // padding: 0.5rem calc((100vw - 1000px) / 2);
   position: sticky;
   position: -webkit-sticky;
   top: 0; /* required */
   z-index: 10;
+  // padding: 0.5rem calc((100vw - 1000px) / 2);
 
   @media screen and(max-width: 960px) {
     transition: 0.8s all ease;
