@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap");
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Encode Sans Expanded', sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -11,4 +11,7 @@
 #logo {
     font-family: 'MonteCarlo', sans-serif;
     font-size: 50px;
+}
+.selected {
+  color: #ff0000; 
 }

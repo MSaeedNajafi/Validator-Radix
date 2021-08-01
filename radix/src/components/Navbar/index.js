@@ -14,6 +14,8 @@ import {
 import { FaBars } from "react-icons/fa";
 
 const Navbar = ({ toggle }) => {
+  // const [active, setActive] = useState(false);
+
   return (
     <>
       <Nav>
@@ -25,12 +27,17 @@ const Navbar = ({ toggle }) => {
           <NavMenu>
             <NavItem>
               <NavLink
+                to="about"
+                smooth={true}
+                duration={1000}
+                activeClass="active"
+                spy={true}
                 onClick={() => {
                   console.log("page1");
                 }}
-                to="Page1"
+                to="about"
               >
-                Link 1
+                About Us
               </NavLink>
             </NavItem>
             <NavItem>
