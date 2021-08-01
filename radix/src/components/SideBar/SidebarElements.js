@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
 import { Link as LinkS } from "react-scroll";
 import { Link as LinkR } from "react-router-dom";
+import COL from "../Colors";
 
 export const SidebarContainer = styled.aside`
     display: none;
@@ -62,7 +63,7 @@ export const SideBarLink = styled(LinkS)`
   cursor: pointer;
 
   &:hover {
-    color: #01bf71;
+    color: ${COL.activeColor};
     transition: 0.2s ease-in-out;
   }
 `;
@@ -74,7 +75,7 @@ export const SideBtnWrap = styled.div`
 
 export const SideBarRoute = styled(LinkR)`
   border-radius: 50px;
-  background: #01bf71;
+  background: ${COL.btnColor};
   white-space: nowarp;
   padding: 16px 64px;
   color: #010606;

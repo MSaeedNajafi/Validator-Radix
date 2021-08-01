@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 import { FaBars } from "react-icons/fa";
+import COL from "../Colors";
 
 export const Nav = styled.nav`
   background: #000;
@@ -102,7 +103,7 @@ export const NavLink = styled(LinkS).attrs(() => ({
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid #01bf71;
+    border-bottom: 3px solid ${COL.activeColor};
   }
 `;
 
@@ -118,7 +119,7 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkR)`
   border-radius: 50px;
-  background: #01bf71;
+  background: ${COL.btnColor};
   white-space: nowarp;
   padding: 10px 22px;
   color: #010606;
