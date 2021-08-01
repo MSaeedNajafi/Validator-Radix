@@ -1,35 +1,41 @@
+const general = {
+  btnANDtextColor: "#01bF71",
+  bckTextButtonMain: "#010606",
+  textANDTitle: "#fff",
+};
+
 const COL = {
   //general
-  btnPrimaryColor: "#01bF71",
-  btnSecondaryColor: "#010606",
-  btnTextColor: "#010606",
-  topTitleColor: "#01bF71",
-  activeColor: "#01bF71",
-  btnSecondaryTextColor: "#fff",
+  btnPrimaryColor: general.btnANDtextColor,
+  btnSecondaryColor: general.bckTextButtonMain,
+  btnTextColor: general.bckTextButtonMain,
+  topTitleColor: general.btnANDtextColor,
+  activeColor: general.btnANDtextColor,
+  btnSecondaryTextColor: general.textANDTitle,
   //navigation
-  btnNavTextColor: "#010606",
-  btnHoverColor: "#fff",
-  navLinkTextColor: "#fff",
-  logoTextColor: "#fff",
+  btnNavTextColor: general.bckTextButtonMain,
+  btnHoverColor: general.textANDTitle,
+  navLinkTextColor: general.textANDTitle,
+  logoTextColor: general.textANDTitle,
   navBackgroundColor: "#000",
   //sidebar
   sideBarBackgroundColor: "#0d0d0d",
-  sideBarTextColor: "#fff",
-  iconColro: "#fff",
-  sideBarBtnHover: "#fff",
-  sideBarTextHoverColor: "#01bF71",
+  sideBarTextColor: general.textANDTitle,
+  iconColro: general.textANDTitle,
+  sideBarBtnHover: general.textANDTitle,
+  sideBarTextHoverColor: general.btnANDtextColor,
   //Info
-  infoContainer: "#010606",
+  infoContainer: general.bckTextButtonMain,
   infoSecondaryContainer: "#f9f9f9",
-  titleInfoPrimaryColor: "#010606",
+  titleInfoPrimaryColor: general.bckTextButtonMain,
   tilteInfoSecondaryColor: "#f7f8fa",
-  subTitle: "#010606",
-  btnTextInfoColor: "#010606",
-  btnInfoHoverColor: "#fff",
+  subTitle: general.bckTextButtonMain,
+  btnTextInfoColor: general.bckTextButtonMain,
+  btnInfoHoverColor: general.textANDTitle,
   //hero
   heroBackgroundColor: "#0c0c0c",
-  heroTitleColor: "#fff",
-  heroTextColor: "#fff",
+  heroTitleColor: general.textANDTitle,
+  heroTextColor: general.textANDTitle,
 };
 
 export default COL;
