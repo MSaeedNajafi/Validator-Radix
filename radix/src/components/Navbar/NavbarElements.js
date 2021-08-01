@@ -5,7 +5,7 @@ import { FaBars } from "react-icons/fa";
 import COL from "../Colors";
 
 export const Nav = styled.nav`
-  background: #000;
+  background: ${COL.navBackgroundColor};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -34,7 +34,7 @@ export const NavBarCotainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkR)`
-  color: #fff;
+  color: ${COL.logoTextColor};
   justify-self: flex-start;
   display: flex;
   cursor: pointer;
@@ -56,7 +56,7 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #fff;
+    color: ${COL.iconColro};
   }
 `;
 
@@ -71,7 +71,7 @@ export const Bars = styled(FaBars)`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #fff;
+    color: ${COL.iconColro};
   }
 `;
 
@@ -94,7 +94,7 @@ export const NavItem = styled.li`
 export const NavLink = styled(LinkS).attrs(() => ({
   activeClass: "active",
 }))`
-  color: #fff;
+  color: ${COL.navLinkTextColor};
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -119,10 +119,10 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(LinkR)`
   border-radius: 50px;
-  background: ${COL.btnColor};
+  background: ${COL.btnPrimaryColor};
   white-space: nowarp;
   padding: 10px 22px;
-  color: #010606;
+  color: ${COL.btnNavTextColor};
   font-size: 16px;
   border: none;
   outline: none;
@@ -132,7 +132,7 @@ export const NavBtnLink = styled(LinkR)`
   // margin-left: 24px;
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #010606;
+    background: ${COL.btnHoverColor};
+    color: ${COL.btnInfoColor};
   }
 `;

@@ -13,7 +13,7 @@ export const SidebarContainer = styled.aside`
       z-index: ${({ isOpen }) => (isOpen ? "999" : "0")};
       width: 100%;
       height: 110%;
-      background: #0d0d0d;
+      background: ${COL.sideBarBackgroundColor};
       display: grid;
       align-items: center;
       left: 0;
@@ -24,7 +24,7 @@ export const SidebarContainer = styled.aside`
 `;
 
 export const CloseIcon = styled(FaTimes)`
-  color: #fff;
+  color: ${COL.iconColro};
 `;
 
 export const Icon = styled.div`
@@ -59,11 +59,11 @@ export const SideBarLink = styled(LinkS)`
   text-decoration: none;
   list-style: none;
   transition: 0.2s ease-in-out;
-  color: #fff;
+  color: ${COL.sideBarTextColor};
   cursor: pointer;
 
   &:hover {
-    color: ${COL.activeColor};
+    color: ${COL.sideBarTextHoverColor};
     transition: 0.2s ease-in-out;
   }
 `;
@@ -75,10 +75,10 @@ export const SideBtnWrap = styled.div`
 
 export const SideBarRoute = styled(LinkR)`
   border-radius: 50px;
-  background: ${COL.btnColor};
+  background: ${COL.btnPrimaryColor};
   white-space: nowarp;
   padding: 16px 64px;
-  color: #010606;
+  color: ${COL.btnTextInfoColor};
   font-size: 16px;
   outline: none;
   border: none;
@@ -88,7 +88,7 @@ export const SideBarRoute = styled(LinkR)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #010606;
+    background: ${COL.sideBarBtnHover};
+    color: ${COL.btnTextInfoColor};
   }
 `;

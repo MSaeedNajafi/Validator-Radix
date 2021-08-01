@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
+import COL from "../Colors";
 
 export const HeroContainer = styled.div`
-    background: #0c0c0c;
+    background: ${COL.heroBackgroundColor};
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +54,7 @@ export const HeroContent = styled.div`
 `;
 
 export const HeroH1 = styled.h1`
-  color: #fff;
+  color: ${COL.heroTitleColor};
   font-size: 48px;
   text-align: center;
 
@@ -67,7 +68,7 @@ export const HeroH1 = styled.h1`
 `;
 
 export const HeroP = styled.p`
-  color: #fff;
+  color: ${COL.heroTextColor};
   font-size: 24px;
   text-align: center;
   margin-top: 24px;

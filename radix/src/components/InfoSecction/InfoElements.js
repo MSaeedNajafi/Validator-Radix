@@ -3,7 +3,8 @@ import COL from "../Colors";
 
 export const InfoContainer = styled.div`
   color: #fff;
-  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
+  background: ${({ lightBg }) =>
+    lightBg ? COL.infoSecondaryContainer : COL.infoContainer};
   position: relative;
   z-index: 1;
 
@@ -67,7 +68,8 @@ export const TopTitile = styled.p`
 `;
 
 export const Title = styled.h1`
-  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
+  color: ${({ lightText }) =>
+    lightText ? COL.tilteInfoSecondaryColor : COL.titleInfoPrimaryColor};
   margin-bottom: 24px;
   font-size: 48px;
   line-height: 1.1;
@@ -83,7 +85,7 @@ export const SubTitle = styled.p`
   margin-bottom: 35px;
   font-szie: 18px;
   line-height: 24px;
-  color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
+  color: ${({ darkText }) => (darkText ? COL.subTitleInfo : "#fff")};
 `;
 
 export const BtnWrap = styled.div`

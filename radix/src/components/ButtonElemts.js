@@ -4,10 +4,11 @@ import COL from "./Colors";
 
 export const Button = styled(Link)`
   border-radius: 50px;
-  background: ${({ primary }) => (primary ? COL.btnColor : "#010606")};
+  background: ${({ primary }) =>
+    primary ? COL.btnPrimaryColor : COL.btnSecondaryColor};
   white-space: nowrap;
   padding: ${({ big }) => (big ? "14px 48px" : "12px 30px")};
-  color: ${({ dark }) => (dark ? "#010606" : "#fff")};
+  color: ${({ dark }) => (dark ? COL.btnTextColor : COL.btnSecondaryTextColor)};
   font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
   outline: none;
   border: none;
@@ -19,6 +20,7 @@ export const Button = styled(Link)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: ${({ primary }) => (primary ? "#fff" : COL.btnColor)};
+    background: ${({ primary }) =>
+      primary ? COL.btnInfoHoverColor : COL.btnPrimaryColor};
   }
 `;
