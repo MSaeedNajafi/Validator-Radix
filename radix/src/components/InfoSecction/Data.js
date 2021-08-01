@@ -43,9 +43,9 @@ export const HomeObjTwo = {
 
 export const HomeObjThree = {
   id: "id3",
-  lightBg: true,
-  lightText: false,
-  lightTextDecs: false,
+  lightBg: false,
+  lightText: true,
+  lightTextDecs: true,
   topTitle: "Get In Touch",
   title: "Contact us we cant wait to hear from you.",
   decsription:
@@ -54,7 +54,7 @@ export const HomeObjThree = {
   imgStart: false,
   img: img3,
   alt: "Radix",
-  dark: false,
-  primary: false,
-  darkText: true,
+  dark: true,
+  primary: true,
+  darkText: false,
 };
