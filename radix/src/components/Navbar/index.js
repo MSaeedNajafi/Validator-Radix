@@ -40,15 +40,19 @@ const Navbar = ({ toggle }) => {
                 Link 3
               </NavLink>
             </NavItem>
-
+            <NavItem>
+              <NavLink smooth={true} duration={1000} spy={true} to="services">
+                Services
+              </NavLink>
+            </NavItem>
             <NavBtn>
               <NavBtnLink
                 onClick={() => {
                   console.log("pressed");
                 }}
-                to="/page2"
+                to="/signin"
               >
-                Click Here
+                Sign In
               </NavBtnLink>
             </NavBtn>
           </NavMenu>
