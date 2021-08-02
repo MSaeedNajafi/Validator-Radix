@@ -43,6 +43,12 @@ const COL = {
   servicesBckColor: general.secondaryColor,
   ServicesCardBckColor: "#fff",
   SerivesH1Color: "#fff",
+  //footer
+  footerContainerBckColor: "#101522",
+  footerLinkItemsColor: "#fff",
+  FooterLinkOnHoverColor: "#01bf71",
+  socialMediaIconColor: "#fff",
+  footerSocialMediaTextColor: "#fff",
 };
 
 export default COL;

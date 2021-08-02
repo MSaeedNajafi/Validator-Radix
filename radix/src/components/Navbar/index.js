@@ -10,6 +10,7 @@ import {
   NavLogo,
   MobileIcon,
   NavItem,
+  NavLogoLink,
 } from "./NavbarElements";
 import { FaBars } from "react-icons/fa";
 
@@ -20,7 +21,9 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav>
         <NavBarCotainer>
-          <NavLogo to="/">Logo</NavLogo>
+          <NavLogoLink smooth={true} duration={1000} spy={true} to="home">
+            Logo
+          </NavLogoLink>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
