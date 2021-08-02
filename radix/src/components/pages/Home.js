@@ -20,7 +20,7 @@ const Home = () => {
       <InfoSection {...HomeObjOne} />
       <InfoSection {...HomeObjTwo} />
       <InfoSection {...HomeObjThree} />
-      {/* <ServicesElements /> */}
+      <ServicesElements />
     </>
   );
 };

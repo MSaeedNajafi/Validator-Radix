@@ -91,9 +91,7 @@ export const NavItem = styled.li`
   height: 80px;
 `;
 
-export const NavLink = styled(LinkS).attrs(() => ({
-  activeClass: "active",
-}))`
+export const NavLink = styled(LinkS)`
   color: ${COL.navLinkTextColor};
   display: flex;
   align-items: center;

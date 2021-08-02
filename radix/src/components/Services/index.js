@@ -8,6 +8,9 @@ import {
   ServicesH2,
   ServicesP,
 } from "./ServicesElements";
+import Icon1 from "../../images/svg-4.svg";
+import Icon2 from "../../images/svg-5.svg";
+import Icon3 from "../../images/svg-6.svg";
 
 const ServicesElements = () => {
   return (
@@ -16,27 +19,27 @@ const ServicesElements = () => {
         <ServicesH1>Our Services</ServicesH1>
         <ServicesWrapper>
           <ServicesCard>
-            <ServicesIcon src={icon1} />
+            <ServicesIcon src={Icon1} />
             <ServicesH2>Validating Transtions</ServicesH2>
             <ServicesP>
-              We help to validate your transafctions and increase your overal
-              value.
+              Lorem Ipsum has been the industry's standard dummy text ever since
+              the 1500s.
             </ServicesP>
           </ServicesCard>
           <ServicesCard>
-            <ServicesIcon src={icon2} />
+            <ServicesIcon src={Icon2} />
             <ServicesH2>Get Rewards</ServicesH2>
             <ServicesP>
-              You will get montly rewards based on your tranactions, this will
-              be in a safe platform.
+              Lorem Ipsum has been the industry's standard dummy text ever since
+              the 1500s.
             </ServicesP>
           </ServicesCard>
           <ServicesCard>
-            <ServicesIcon src={icon3} />
+            <ServicesIcon src={Icon3} />
             <ServicesH2>Increase Profit</ServicesH2>
             <ServicesP>
-              You can keep your reward and or sell it, evetually you profit will
-              be increased.
+              Lorem Ipsum has been the industry's standard dummy text ever since
+              the 1500s.
             </ServicesP>
           </ServicesCard>
         </ServicesWrapper>

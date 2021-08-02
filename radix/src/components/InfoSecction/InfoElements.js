@@ -75,7 +75,7 @@ export const Title = styled.h1`
   line-height: 1.1;
   font-weight: 600;
 
-  @media screen and (mex-width: 480px) {
+  @media screen and (max-width: 480px) {
     font-size: 32px;
   }
 `;

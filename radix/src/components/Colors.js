@@ -39,6 +39,10 @@ const COL = {
   heroBackgroundColor: "#0c0c0c",
   heroTitleColor: general.textANDTitle,
   heroTextColor: general.textANDTitle,
+  //services
+  servicesBckColor: general.secondaryColor,
+  ServicesCardBckColor: "#fff",
+  SerivesH1Color: "#fff",
 };
 
 export default COL;
