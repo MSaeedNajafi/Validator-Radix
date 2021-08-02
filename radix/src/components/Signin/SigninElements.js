@@ -6,9 +6,9 @@ export const Container = styled.div`
   min-height: 800px;
   position: fixed;
   bottom: 0;
-  top: 0;
   left: 0;
   right: 0;
+  top: 0;
   z-index: 0;
   overflow: hidden;
   // position: relative;
@@ -61,6 +61,7 @@ export const Form = styled.form`
   background: ${COL.formBckGround};
   max-width: 400px;
   height: auto;
+  width: 100%;
   z-index: 1;
   display: grid;
   margin: 0 auto;
@@ -74,9 +75,13 @@ export const Form = styled.form`
 `;
 
 export const FormH1 = styled.h1`
-  margin-bottom: 8px;
-  font-size: 14px;
+  // margin-bottom: 8px;
+  font-size: 20px;
   color: ${COL.formH1Color};
+  font-weight: 400;
+  text-align: center;
+  padding: 18px;
+  // margin-top: -50px;
 `;
 
 export const FormLabel = styled.label`
