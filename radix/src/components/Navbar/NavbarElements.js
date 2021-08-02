@@ -5,7 +5,8 @@ import { FaBars } from "react-icons/fa";
 import COL from "../Colors";
 
 export const Nav = styled.nav`
-  background: ${COL.navBackgroundColor};
+  background: ${({ scrollNav }) =>
+    scrollNav ? COL.navBackgroundColor : "transparent"};
   height: 80px;
   margin-top: -80px;
   display: flex;

@@ -1,5 +1,5 @@
 const general = {
-  primaryColor: "#01bF71",
+  primaryColor: "#01bf71",
   secondaryColor: "#010606",
   // primaryColor: "#ef9273",
   // secondaryColor: "#010606",
@@ -49,6 +49,13 @@ const COL = {
   FooterLinkOnHoverColor: "#01bf71",
   socialMediaIconColor: "#fff",
   footerSocialMediaTextColor: "#fff",
+  //signin
+  signinIconColor: "#fff",
+  formBckGround: "#010101",
+  formH1Color: "#fff",
+  formBtnBckColor: "#01bf71",
+  formBtnTextColor: "#fff",
+  formSpanColor: "#fff",
 };
 
 export default COL;
