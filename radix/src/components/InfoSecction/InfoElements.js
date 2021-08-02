@@ -80,12 +80,12 @@ export const Title = styled.h1`
   }
 `;
 
-export const SubTitle = styled.p`
+export const Description = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
   font-szie: 18px;
   line-height: 24px;
-  color: ${({ darkText }) => (darkText ? COL.subTitleInfo : "#fff")};
+  color: ${({ darkText }) => (darkText ? COL.descSecondary : COL.descPrimary)};
 `;
 
 export const BtnWrap = styled.div`

@@ -29,7 +29,8 @@ const COL = {
   infoSecondaryContainer: "#f9f9f9",
   titleInfoPrimaryColor: general.bckTextButtonMain,
   tilteInfoSecondaryColor: "#f7f8fa",
-  subTitle: general.bckTextButtonMain,
+  descPrimary: general.textANDTitle,
+  descSecondary: general.bckTextButtonMain,
   btnTextInfoColor: general.bckTextButtonMain,
   btnInfoHoverColor: general.textANDTitle,
   //hero

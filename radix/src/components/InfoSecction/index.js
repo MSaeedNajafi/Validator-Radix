@@ -10,7 +10,7 @@ import {
   TextWrapper,
   TopTitile,
   Title,
-  SubTitle,
+  Description,
   BtnWrap,
   ImgWrap,
   Img,
@@ -41,7 +41,7 @@ const InfoSection = ({
               <TextWrapper>
                 <TopTitile>{topTitle}</TopTitile>
                 <Title lightText={lightText}>{title}</Title>
-                <SubTitle darkText={darkText}>{decsription}</SubTitle>
+                <Description darkText={darkText}>{decsription}</Description>
                 <BtnWrap>
                   <Button
                     to="home"
