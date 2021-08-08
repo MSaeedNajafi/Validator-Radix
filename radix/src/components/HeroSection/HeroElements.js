@@ -3,25 +3,30 @@ import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 import COL from "../Colors";
 
 export const HeroContainer = styled.div`
-    background: ${COL.heroBackgroundColor};
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding 0 30px;
-    height: 800px;
-    position: relative;
-    z-index: 1;
+  background: ${COL.heroBackgroundColor};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // padding 0 30px;
+  height: 800px;
+  position: relative;
+  z-index: 1;
 
-    :before{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%), linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
-        z-index: 2; 
-    }
+  :before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      ),
+      linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, transparent 100%);
+    z-index: 2;
+  }
 `;
 
 export const HeroBg = styled.div`
@@ -59,11 +64,13 @@ export const HeroH1 = styled.h1`
   text-align: center;
 
   @media screen and (max-width: 768px) {
-    font-size: 40px;
+    margin-top: 75px;
+    font-size: 30px;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 32px;
+    font-size: 16px;
+    margin-top: 50px;
   }
 `;
 
@@ -71,20 +78,22 @@ export const HeroP = styled.p`
   color: ${COL.heroTextColor};
   font-size: 24px;
   text-align: center;
-  margin-top: 24px;
+  margin-top: 15px;
   max-width: 600px;
 
   @media screen and (max-width: 768px) {
-    font-size: 24px;
+    font-size: 20px;
+    margin-top: 5px;
   }
 
   @media screen and (max-width: 480px) {
     font-size: 18px;
+    margin-top: 0;
   }
 `;
 
 export const HeroBtnWrapper = styled.div`
-  margin-top: 32px;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;

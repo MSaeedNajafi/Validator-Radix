@@ -17,7 +17,7 @@ const SignIn = () => {
     <>
       <Container>
         <FormWrap>
-          <Icon to="/">iamSaeed</Icon>
+          <Icon to="/">ArcticStake</Icon>
           <FormCotent>
             <Form action="#">
               <FormH1>Sign in to your account</FormH1>

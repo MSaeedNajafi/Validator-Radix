@@ -41,7 +41,7 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavBarCotainer>
             <NavLogoLink to="/" onClick={toggleHome}>
-              iamSaeed
+              ArcticStake
             </NavLogoLink>
             <MobileIcon onClick={toggle}>
               <FaBars />
@@ -56,7 +56,7 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-80}
                 >
-                  About Us
+                  Calculator
                 </NavLink>
               </NavItem>
               <NavItem>
@@ -68,10 +68,10 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-80}
                 >
-                  Link 2
+                  Server Specs
                 </NavLink>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                 <NavLink
                   smooth={true}
                   duration={500}
@@ -82,7 +82,7 @@ const Navbar = ({ toggle }) => {
                 >
                   Link 3
                 </NavLink>
-              </NavItem>
+              </NavItem> */}
               <NavItem>
                 <NavLink
                   smooth={true}
@@ -102,7 +102,7 @@ const Navbar = ({ toggle }) => {
                   }}
                   to="/signin"
                 >
-                  Sign In
+                  Contact Us
                 </NavBtnLink>
               </NavBtn>
             </NavMenu>

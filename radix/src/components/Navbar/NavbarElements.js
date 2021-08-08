@@ -109,11 +109,16 @@ export const NavLogoLink = styled(LinkS)`
   justify-self: flex-start;
   display: flex;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 46px;
   align-items: center;
-  margin-left: 24px;
+  // margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
+
+  @media screen and (max-width: 768px) {
+    font-size: 25px;
+    margin-left: 0;
+  }
 `;
 
 export const NavLink = styled(LinkS)`
@@ -130,7 +135,7 @@ export const NavLink = styled(LinkS)`
   }
 `;
 
-export const NavBtn = styled.nav`
+export const NavBtn = styled.div`
   display: flex;
   align-items: center;
   // margin-right: 24px;
