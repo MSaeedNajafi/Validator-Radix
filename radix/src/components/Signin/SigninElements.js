@@ -113,3 +113,14 @@ export const Text = styled.span`
   color: ${COL.formSpanColor};
   font-size: 14px;
 `;
+
+export const FormInputTextArea = styled.textarea`
+  padding: 16px 16px;
+  margin-bottom: 32px;
+  border: none;
+  border-radius: 4px;
+  height: 10rem;
+  @media screen and (max-width: 480px) {
+    height: 6rem;
+  }
+`;

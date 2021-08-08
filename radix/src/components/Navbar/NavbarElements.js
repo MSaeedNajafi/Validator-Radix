@@ -146,11 +146,11 @@ export const NavBtn = styled.div`
 `;
 
 export const NavBtnLink = styled(LinkR)`
-  border-radius: 50px;
+  border-radius: 5px;
   background: ${COL.btnPrimaryColor};
   white-space: nowarp;
   padding: 10px 22px;
-  color: ${COL.btnNavTextColor};
+  color: #fff;
   font-size: 16px;
   border: none;
   outline: none;
@@ -161,6 +161,6 @@ export const NavBtnLink = styled(LinkR)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: ${COL.btnHoverColor};
-    color: ${COL.btnInfoColor};
+    color: ${COL.btnNavTextColor};
   }
 `;

@@ -17,6 +17,7 @@ import {
 } from "./InfoElements";
 
 import Table from "../Table";
+import InputSlider from "../Slider";
 
 const InfoSection = ({
   lightBg,
@@ -40,11 +41,22 @@ const InfoSection = ({
         <InfoWapper>
           <InfoRow imgStart={imgStart}>
             <Coulmn1>
-              {id == "id2" ? (
-                <Table />
+              {/* {id == "about" ? <p>1</p> : <p>2</p>} */}
+              {id == "id2" || id == "about" ? (
+                id == "id2" ? (
+                  <>
+                    <TopTitile>{topTitle}</TopTitile>
+                    <Table />
+                  </>
+                ) : (
+                  <>
+                    <TopTitile>{topTitle}</TopTitile>
+                    <Title lightText={lightText}>{title}</Title>
+                    <InputSlider />
+                  </>
+                )
               ) : (
                 <TextWrapper>
-                  <TopTitile>{topTitle}</TopTitile>
                   <Title lightText={lightText}>{title}</Title>
                   <Description darkText={darkText}>{decsription}</Description>
                   <BtnWrap>

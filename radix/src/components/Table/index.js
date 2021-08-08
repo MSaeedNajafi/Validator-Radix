@@ -22,12 +22,12 @@ const TableSection = () => {
 
       <table>
         <tr>
-          <th>Server Specs</th>
+          <th>Server Name</th>
           <td>Asgard</td>
         </tr>
         <tr>
           <th>CPU</th>
-          <td>4 cores</td>
+          <td>4 cores (8 soon)</td>
         </tr>
         <tr>
           <th>RAM</th>
@@ -35,7 +35,7 @@ const TableSection = () => {
         </tr>
         <tr>
           <th>Bandwidth</th>
-          <td>1 Gbps</td>
+          <td>1 Gbps (2 soon)</td>
         </tr>
         <tr>
           <th>Location</th>
