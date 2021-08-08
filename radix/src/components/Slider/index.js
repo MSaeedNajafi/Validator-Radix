@@ -27,7 +27,7 @@ const useStyles = makeStyles({
   dolla: {
     color: "#00c389",
     fontWeight: "bold",
-    marginLeft: -10,
+    // marginLeft: -10,
   },
 });
 
@@ -71,30 +71,30 @@ export default function InputSlider() {
         <Grid item xs={6}>
           <p className={classes.days}>Yearly</p>
         </Grid>
-        <Grid item xs={5}>
+        <Grid item xs={4}>
           <p className={classes.values}>{Math.round(calcYearly(value))}</p>
         </Grid>
-        <Grid item xs={1}>
+        <Grid item xs={2}>
           <p className={classes.dolla}>XRD</p>
         </Grid>
 
         <Grid item xs={6}>
           <p className={classes.days}>Monthly</p>
         </Grid>
-        <Grid item xs={5}>
+        <Grid item xs={4}>
           <p className={classes.values}>{Math.round(calcMontly(value))}</p>
         </Grid>
-        <Grid item xs={1}>
+        <Grid item xs={2}>
           <p className={classes.dolla}>XRD</p>
         </Grid>
 
         <Grid item xs={6}>
           <p className={classes.days}>Daily</p>
         </Grid>
-        <Grid item xs={5}>
+        <Grid item xs={4}>
           <p className={classes.values}>{Math.round(calcDaily(value))}</p>
         </Grid>
-        <Grid item xs={1}>
+        <Grid item xs={2}>
           <p className={classes.dolla}>XRD</p>
         </Grid>
       </Grid>

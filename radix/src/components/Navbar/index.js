@@ -1,5 +1,7 @@
 import react, { useState, useEffect } from "react";
 import { animateScroll as scroll } from "react-scroll";
+import { IconContext } from "react-icons/lib";
+import { FaBars } from "react-icons/fa";
 import {
   Nav,
   NavLink,
@@ -12,9 +14,9 @@ import {
   MobileIcon,
   NavItem,
   NavLogoLink,
+  Emoji,
 } from "./NavbarElements";
-import { IconContext } from "react-icons/lib";
-import { FaBars } from "react-icons/fa";
+import emo from "../../images/2724241120.png";
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -41,6 +43,7 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavBarCotainer>
             <NavLogoLink to="/" onClick={toggleHome}>
+              <Emoji src={emo}></Emoji>
               ArcticStake
             </NavLogoLink>
             <MobileIcon onClick={toggle}>

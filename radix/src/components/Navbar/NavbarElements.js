@@ -164,3 +164,15 @@ export const NavBtnLink = styled(LinkR)`
     color: ${COL.btnNavTextColor};
   }
 `;
+
+export const Emoji = styled.img`
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+
+  @media screen and (max-width: 768px) {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+  }
+`;
