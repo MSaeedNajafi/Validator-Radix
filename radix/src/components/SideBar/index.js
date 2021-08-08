@@ -19,20 +19,20 @@ const Sidebar = ({ isOpen, toggle }) => {
       <SideBarWrapper>
         <SideBarMenu>
           <SideBarLink onClick={toggle} to="home">
-            Home
+            Calculator
           </SideBarLink>
           <SideBarLink onClick={toggle} to="about">
-            Page 1
+            Server-Specs
           </SideBarLink>
-          <SideBarLink onClick={toggle} to="id2">
+          {/* <SideBarLink onClick={toggle} to="id2">
             Page 2
           </SideBarLink>
           <SideBarLink onClick={toggle} to="id3">
             Page 3
-          </SideBarLink>
+          </SideBarLink> */}
         </SideBarMenu>
         <SideBtnWrap>
-          <SideBarRoute to="/signin">Sign in</SideBarRoute>
+          <SideBarRoute to="/contact">Contact Us</SideBarRoute>
         </SideBtnWrap>
       </SideBarWrapper>
     </SidebarContainer>

@@ -9,9 +9,11 @@ import {
   HeroBtnWrapper,
   ArrowForward,
   ArrowRight,
+  RlogoWrap,
 } from "./HeroElements";
 import Video from "../../video/video.mp4";
 import { Button } from "../ButtonElemts";
+import rlogo from "../../images/rlogo.png";
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
@@ -26,11 +28,20 @@ const HeroSection = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <HeroH1>We can Validate your transactions</HeroH1>
-        <HeroP>Please read more about it.</HeroP>
+        <HeroH1>
+          Stake with us and earn
+          <span style={{ color: "#00c389" }}>
+            <RlogoWrap src={rlogo}></RlogoWrap>R
+          </span>
+          adix (XRD) tokens.
+        </HeroH1>
+        <HeroP>You always remain control of your funds.</HeroP>
+        <HeroP>Staking in Radix is non-custodial.</HeroP>
+        <HeroP>99.9% uptime</HeroP>
+
         <HeroBtnWrapper>
           <Button
-            to="id3"
+            to="about"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary="true"
@@ -41,7 +52,7 @@ const HeroSection = () => {
             exact="true"
             offset={-80}
           >
-            Contact Us {hover ? <ArrowForward /> : <ArrowRight />}
+            Calculate your rewards {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
       </HeroContent>

@@ -109,11 +109,16 @@ export const NavLogoLink = styled(LinkS)`
   justify-self: flex-start;
   display: flex;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 46px;
   align-items: center;
-  margin-left: 24px;
+  // margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
+
+  @media screen and (max-width: 768px) {
+    font-size: 25px;
+    margin-left: 0;
+  }
 `;
 
 export const NavLink = styled(LinkS)`
@@ -130,7 +135,7 @@ export const NavLink = styled(LinkS)`
   }
 `;
 
-export const NavBtn = styled.nav`
+export const NavBtn = styled.div`
   display: flex;
   align-items: center;
   // margin-right: 24px;
@@ -141,11 +146,11 @@ export const NavBtn = styled.nav`
 `;
 
 export const NavBtnLink = styled(LinkR)`
-  border-radius: 50px;
+  border-radius: 5px;
   background: ${COL.btnPrimaryColor};
   white-space: nowarp;
   padding: 10px 22px;
-  color: ${COL.btnNavTextColor};
+  color: #fff;
   font-size: 16px;
   border: none;
   outline: none;
@@ -156,6 +161,18 @@ export const NavBtnLink = styled(LinkR)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: ${COL.btnHoverColor};
-    color: ${COL.btnInfoColor};
+    color: ${COL.btnNavTextColor};
+  }
+`;
+
+export const Emoji = styled.img`
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+
+  @media screen and (max-width: 768px) {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
   }
 `;

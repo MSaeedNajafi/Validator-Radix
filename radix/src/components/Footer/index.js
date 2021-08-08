@@ -32,7 +32,7 @@ const Footer = () => {
     <>
       <FooterContainer>
         <FooterWrap>
-          <FooterLinksContainer>
+          {/* <FooterLinksContainer>
             <FooterLinksWrapper>
               <FooterLinksItems>
                 <FooterLinkTitle>About US</FooterLinkTitle>
@@ -65,16 +65,16 @@ const Footer = () => {
                 <FooterLink to="/">Twitter</FooterLink>
               </FooterLinksItems>
             </FooterLinksWrapper>
-          </FooterLinksContainer>
+          </FooterLinksContainer> */}
           <SocialMedia>
             <SocialMediaWrap>
               <SocialLogo onClick={toggleHome} to="/">
-                iamSaeed
+                ArcticStake
               </SocialLogo>
               <WebsiteRights>
                 Saeed Najafi © {new Date().getFullYear()} All rights reserved.
               </WebsiteRights>
-              <SocialIcons>
+              {/* <SocialIcons>
                 <SocialIconLink href="/" target="_blank" aria-label="Facebook">
                   <FaFacebook />
                 </SocialIconLink>
@@ -90,7 +90,7 @@ const Footer = () => {
                 <SocialIconLink href="/" target="_blank" aria-label="Linkedin">
                   <FaLinkedin />
                 </SocialIconLink>
-              </SocialIcons>
+              </SocialIcons> */}
             </SocialMediaWrap>
           </SocialMedia>
         </FooterWrap>
