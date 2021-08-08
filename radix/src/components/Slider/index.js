@@ -24,20 +24,25 @@ const useStyles = makeStyles({
     color: "black",
     textAlign: "right",
   },
+  dolla: {
+    color: "#00c389",
+    fontWeight: "bold",
+    marginLeft: -10,
+  },
 });
 
 export default function InputSlider() {
   const classes = useStyles();
   const [value, setValue] = useState(0);
 
-  const calcYearly = (value) => {
-    return (300000000000 * value) / 94.4 / 52;
+  const calcDaily = (value) => {
+    return (300000000 * value) / 43000000 / 52;
   };
   const calcMontly = (value) => {
-    return (300000000000 * value) / 94.4 / 12;
+    return (300000000 * value) / 43000000 / 12;
   };
-  const calcDaily = (value) => {
-    return (300000000 * value) / 94.4;
+  const calcYearly = (value) => {
+    return (300000000 * value) / 43000000;
   };
 
   const handleChange = (event) => {
@@ -57,7 +62,7 @@ export default function InputSlider() {
           <TextField
             required
             id="standard-required"
-            label="Your Stake XRD"
+            label="Your Staked XRD"
             value={value}
             onChange={handleInputChange}
             style={{ width: "100%" }}
@@ -66,20 +71,31 @@ export default function InputSlider() {
         <Grid item xs={6}>
           <p className={classes.days}>Yearly</p>
         </Grid>
-        <Grid item xs={6}>
-          <p className={classes.values}>{calcYearly(value)} $</p>
+        <Grid item xs={5}>
+          <p className={classes.values}>{Math.round(calcYearly(value))}</p>
         </Grid>
+        <Grid item xs={1}>
+          <p className={classes.dolla}>XRD</p>
+        </Grid>
+
         <Grid item xs={6}>
           <p className={classes.days}>Monthly</p>
         </Grid>
-        <Grid item xs={6}>
-          <p className={classes.values}>{calcMontly(value)} $</p>
+        <Grid item xs={5}>
+          <p className={classes.values}>{Math.round(calcMontly(value))}</p>
         </Grid>
+        <Grid item xs={1}>
+          <p className={classes.dolla}>XRD</p>
+        </Grid>
+
         <Grid item xs={6}>
           <p className={classes.days}>Daily</p>
         </Grid>
-        <Grid item xs={6}>
-          <p className={classes.values}>{calcDaily(value)} $</p>
+        <Grid item xs={5}>
+          <p className={classes.values}>{Math.round(calcDaily(value))}</p>
+        </Grid>
+        <Grid item xs={1}>
+          <p className={classes.dolla}>XRD</p>
         </Grid>
       </Grid>
     </div>

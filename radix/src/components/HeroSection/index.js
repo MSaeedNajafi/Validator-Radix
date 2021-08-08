@@ -41,7 +41,7 @@ const HeroSection = () => {
 
         <HeroBtnWrapper>
           <Button
-            to="id3"
+            to="about"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary="true"

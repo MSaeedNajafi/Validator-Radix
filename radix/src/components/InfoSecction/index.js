@@ -50,7 +50,7 @@ const InfoSection = ({
                   </>
                 ) : (
                   <>
-                    <TopTitile>{topTitle}</TopTitile>
+                    {/* <TopTitile>{topTitle}</TopTitile> */}
                     <Title lightText={lightText}>{title}</Title>
                     <InputSlider />
                   </>

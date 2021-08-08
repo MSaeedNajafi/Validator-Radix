@@ -74,7 +74,7 @@ const Footer = () => {
               <WebsiteRights>
                 Saeed Najafi © {new Date().getFullYear()} All rights reserved.
               </WebsiteRights>
-              <SocialIcons>
+              {/* <SocialIcons>
                 <SocialIconLink href="/" target="_blank" aria-label="Facebook">
                   <FaFacebook />
                 </SocialIconLink>
@@ -90,7 +90,7 @@ const Footer = () => {
                 <SocialIconLink href="/" target="_blank" aria-label="Linkedin">
                   <FaLinkedin />
                 </SocialIconLink>
-              </SocialIcons>
+              </SocialIcons> */}
             </SocialMediaWrap>
           </SocialMedia>
         </FooterWrap>
