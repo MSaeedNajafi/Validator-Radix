@@ -68,7 +68,7 @@ const Navbar = ({ toggle }) => {
                   exact="true"
                   offset={-80}
                 >
-                  Server Specs
+                  Server-Specs
                 </NavLink>
               </NavItem>
               {/* <NavItem>
@@ -83,7 +83,7 @@ const Navbar = ({ toggle }) => {
                   Link 3
                 </NavLink>
               </NavItem> */}
-              <NavItem>
+              {/* <NavItem>
                 <NavLink
                   smooth={true}
                   duration={500}
@@ -94,13 +94,13 @@ const Navbar = ({ toggle }) => {
                 >
                   Services
                 </NavLink>
-              </NavItem>
+              </NavItem> */}
               <NavBtn>
                 <NavBtnLink
                   onClick={() => {
                     console.log("pressed");
                   }}
-                  to="/signin"
+                  to="/contact"
                 >
                   Contact Us
                 </NavBtnLink>

@@ -108,3 +108,15 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
   margin-left: 8px;
   font-size: 20px;
 `;
+
+export const RlogoWrap = styled.img`
+  width: 75px;
+  height: 75px;
+  margin-right: -30px;
+
+  @media screen and (max-width: 480px) {
+    width: 25px;
+    height: 25px;
+    margin-right: 0;
+  }
+`;

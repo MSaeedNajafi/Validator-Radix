@@ -9,9 +9,11 @@ import {
   HeroBtnWrapper,
   ArrowForward,
   ArrowRight,
+  RlogoWrap,
 } from "./HeroElements";
 import Video from "../../video/video.mp4";
 import { Button } from "../ButtonElemts";
+import rlogo from "../../images/rlogo.png";
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
@@ -29,11 +31,7 @@ const HeroSection = () => {
         <HeroH1>
           Stake with us and earn
           <span style={{ color: "#00c389" }}>
-            {/* <img
-              sre="https://assets-global.website-files.com/6053f7fca5bf627283b582c2/606d99f3190d3a859603fbb5_r-symbol.svg"
-              alt=""
-            /> */}
-            {/* <img src="url" alt="alternatetext">  */}R
+            <RlogoWrap src={rlogo}></RlogoWrap>R
           </span>
           adix (XRD) tokens.
         </HeroH1>

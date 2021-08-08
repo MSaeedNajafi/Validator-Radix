@@ -15,3 +15,28 @@
 .selected {
   color: #ff0000; 
 }
+
+table {
+  width: 100%;
+  border: 1px solid transparent;
+  border-collapse: collapse;
+  color:black;
+  
+}
+
+th, td {
+  border: 1px solid transparent;
+  border-collapse: collapse;
+}
+
+th, td,  tr {
+    padding: 5px;
+}
+
+th {
+    text-align: left;
+}
+
+td {
+  text-align: right;
+}
