@@ -15,6 +15,7 @@ import {
   NavItem,
   NavLogoLink,
   Emoji,
+  Atag,
 } from "./NavbarElements";
 import emo from "../../images/2724241120.png";
 
@@ -108,6 +109,11 @@ const Navbar = ({ toggle }) => {
                   Contact Us
                 </NavBtnLink>
               </NavBtn>
+              <NavItem>
+                <Atag href="https://explorer.radixdlt.com/#/validators/rv1qgfmskllt5lj2l2q2crgat6ml4t9u0n36phxevv3qy9yegxapdxnjgnqsuh">
+                  Explorer
+                </Atag>
+              </NavItem>
             </NavMenu>
             {/* <NavBtn>
           <NavBtnLink to="/Link4">Click Here</NavBtnLink>

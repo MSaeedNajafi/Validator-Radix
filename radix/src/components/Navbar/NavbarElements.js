@@ -176,3 +176,17 @@ export const Emoji = styled.img`
     margin-right: 5px;
   }
 `;
+
+export const Atag = styled.a`
+  color: ${COL.navLinkTextColor};
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+
+  &.active {
+    border-bottom: 3px solid ${COL.activeColor};
+  }
+`;
