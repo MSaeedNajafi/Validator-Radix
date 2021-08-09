@@ -35,7 +35,7 @@ const HeroSection = () => {
           </span>
           adix (XRD) tokens.
         </HeroH1>
-        <HeroP>You always remain control of your funds.</HeroP>
+        <HeroP>You always remain in control of your funds.</HeroP>
         <HeroP>Staking in Radix is non-custodial.</HeroP>
         <HeroP>99.9% uptime</HeroP>
 
