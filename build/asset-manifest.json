@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Validator-Radix/static/css/main.76763d1e.chunk.css",
-    "main.js": "/Validator-Radix/static/js/main.1fb67807.chunk.js",
-    "main.js.map": "/Validator-Radix/static/js/main.1fb67807.chunk.js.map",
+    "main.js": "/Validator-Radix/static/js/main.e5e830f2.chunk.js",
+    "main.js.map": "/Validator-Radix/static/js/main.e5e830f2.chunk.js.map",
     "runtime-main.js": "/Validator-Radix/static/js/runtime-main.efb59034.js",
     "runtime-main.js.map": "/Validator-Radix/static/js/runtime-main.efb59034.js.map",
     "static/js/2.f01759b4.chunk.js": "/Validator-Radix/static/js/2.f01759b4.chunk.js",
@@ -27,6 +27,6 @@
     "static/js/runtime-main.efb59034.js",
     "static/js/2.f01759b4.chunk.js",
     "static/css/main.76763d1e.chunk.css",
-    "static/js/main.1fb67807.chunk.js"
+    "static/js/main.e5e830f2.chunk.js"
   ]
 }
