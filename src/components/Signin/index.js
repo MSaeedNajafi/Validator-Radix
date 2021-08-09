@@ -43,7 +43,7 @@ const ContactUs = () => {
           <Icon to="/">ArcticStake</Icon>
           <FormCotent>
             <Form action="#" onSubmit={onSubmit}>
-              <FormH1>Contact Us</FormH1>
+              <FormH1>Contact Ussss</FormH1>
               <FormLabel htmlFor="for">Email</FormLabel>
               <FormInput
                 type="email"
